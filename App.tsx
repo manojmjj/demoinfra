@@ -37,7 +37,7 @@ const getInitialState = <T,>(key: string, fallback: T[]): T[] => {
 const App: React.FC = () => {
   const [activePage, setActivePage] = useState('Dashboard');
   const [searchQuery, setSearchQuery] = useState('');
-  const [user, setUser] = useState<User>({ name: 'Manoj Mj', role: 'Administrator' });
+  const [user, setUser] = useState<User>({ name: 'Mjj', role: 'Administrator' });
 
   // Centralized state management with localStorage persistence
   const [clients, setClients] = useState<Client[]>(() => getInitialState('clients', initialClients));
